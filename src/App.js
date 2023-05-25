@@ -37,8 +37,8 @@ function App() {
     <div className="App text-white flex flex-col gap-2 bg-gray-700 h-screen">
       <header className="items-center justify-around p-5 font-bold text-2xl flex bg-gray-900">
         <h1>DOB Calculator</h1>
-        <div className="border min-w-[100px] h-[30px] items-center right-10 top-2 flex justify-center">
-        <h1 className="text-lg fixed">By Satyam</h1>
+        <div className=" min-w-[100px] h-[30px] items-center right-10 top-2 flex justify-center">
+        <h1 className="text-lg ">By Satyam</h1>
       </div>
       </header>
       <div className="flex justify-between h-[400px] flex-col items-center justify-around">
