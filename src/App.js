@@ -25,14 +25,21 @@ function App() {
     setYears(0);
     setMonths(0);
   };
-  useEffect(() => {
-    const calculatedDays = Math.random() * 30;
-  }, [years], [months]);
+  useEffect(
+    () => {
+      const calculatedDays = Math.random() * 30;
+    },
+    [years],
+    [months]
+  );
 
   return (
     <div className="App text-white flex flex-col gap-2 bg-gray-700 h-screen">
-      <header className="items-center justify-center p-5 font-bold text-2xl flex bg-gray-900">
+      <header className="items-center justify-around p-5 font-bold text-2xl flex bg-gray-900">
         <h1>DOB Calculator</h1>
+        <div className="border min-w-[100px] h-[30px] items-center right-10 top-2 flex justify-center">
+        <h1 className="text-lg fixed">By Satyam</h1>
+      </div>
       </header>
       <div className="flex justify-between h-[400px] flex-col items-center justify-around">
         <h1 className="font-bold text-gray-500 text-2xl flex flex-col items-center">
@@ -76,6 +83,7 @@ function App() {
           </div>
         </div>
       </div>
+     
     </div>
   );
 }
