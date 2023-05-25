@@ -37,22 +37,22 @@ function App() {
           Enter the age in:
         </h1>
         <div className="flex gap-10 justify-around">
-          <div className="flex flex-col gap-5 items-center">
+          <div className="flex flex-col gap-5 md:w-[360px] w-[150px] items-center">
             <span className="text-gray-200 text-xl font-semibold">Years</span>
             <input
               type="number"
-              className="min-h-[40px] border border-black border-2 rounded text-black p-2 outline-gray-600"
+              className="min-h-[40px] w-[90%] border border-black border-2 rounded text-black p-2 outline-gray-600"
               value={null}
               placeholder="0"
               onChange={(e) => setYears(e.target.value)}
             />
           </div>
 
-          <div className="flex flex-col gap-5 items-center">
+          <div className="flex flex-col gap-5 w-[150px] md:w-[360px] items-center">
             <span className="text-gray-200 text-xl font-semibold">Months</span>
             <input
               type="number"
-              className="min-h-[40px] border border-black border-2 rounded text-black p-2 outline-gray-600"
+              className="min-h-[40px] w-[90%] border border-black border-2 rounded text-black p-2 outline-gray-600"
               value={null}
               placeholder="0"
               onChange={(e) => setMonths(e.target.value)}
