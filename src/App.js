@@ -22,6 +22,8 @@ function App() {
       setDobYear(calculatedYear - 1);
       setDobMonth(calculatedMonth + 12);
     }
+    setYears(0);
+    setMonths(0);
   };
   useEffect(() => {
     const calculatedDays = Math.random() * 30;
@@ -42,8 +44,8 @@ function App() {
             <input
               type="number"
               className="min-h-[40px] w-[90%] border border-black border-2 rounded text-black p-2 outline-gray-600"
-              value={null}
-              placeholder="0"
+              value={years}
+              // placeholder="0"
               onChange={(e) => setYears(e.target.value)}
             />
           </div>
@@ -53,8 +55,8 @@ function App() {
             <input
               type="number"
               className="min-h-[40px] w-[90%] border border-black border-2 rounded text-black p-2 outline-gray-600"
-              value={null}
-              placeholder="0"
+              value={months}
+              // placeholder="0"
               onChange={(e) => setMonths(e.target.value)}
             />
           </div>
